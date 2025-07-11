@@ -4,7 +4,7 @@ from openai import OpenAI
 
 config = load_dotenv('.env')
 
-openai.api_key = config
+openai.api_key = config['API_KEY']
 
 def generate_blog(paragraph_topic):
     response = client.chat.completions.create(
