@@ -1,6 +1,10 @@
+from dotenv import load_dotenv
+import os
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+config = load_dotenv('.env')
+
+openai.api_key = config
 
 def generate_blog(paragraph_topic):
     response = client.chat.completions.create(
