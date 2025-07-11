@@ -18,4 +18,4 @@ def generate_blog(paragraph_topic):
     )
     return response.choices[0].message.content.strip()
 
-print(generate_blog("BMW M4"))
+print(generate_blog("BMW M4")) # can write any topic you like
